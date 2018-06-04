@@ -5,6 +5,12 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>ftp</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -25,4 +31,17 @@
       </plugin>
     </plugins>
   </build>
+  
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>WL310888-releases</name>
+        <url>http://localhost:8081/artifactory/Cash</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>WL310888-snapshots</name>
+        <url>http://localhost:8081/artifactory/Cash</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
