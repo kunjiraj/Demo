@@ -1,4 +1,9 @@
 node {
+
+	stage 'SCM Checkout'
+    echo 'Checking out Source Code'
+    git url: 'https://github.com/kunjiraj/Demo'
+	
     stage 'Build'
     echo "Starting clean compilation"
     bat "mvn compile"
