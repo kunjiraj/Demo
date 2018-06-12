@@ -4,7 +4,7 @@ node {
     echo 'Checking out Source Code'
     git url: 'https://github.com/kunjiraj/Demo'
 	
-	stage 'Clean'
+	stage 'Install'
     echo "Starting clean compilation"
     bat "mvn Clean Install"
 	
