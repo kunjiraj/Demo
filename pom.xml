@@ -46,19 +46,15 @@
     </plugins>
   </build>
   
-  <distributionManagement>
+<distributionManagement>
     <repository>
         <id>central</id>
-		<username>admin</username>
-		<password>admin</password>
-        <name>WL310888-releases</name>
+		<name>WL310888-releases</name>
         <url>http://localhost:8081/artifactory/Demo_2518</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-		<username>admin</username>
-		<password>admin</password>
-        <name>WL310888-snapshots</name>
+		<name>WL310888-snapshots</name>
         <url>http://localhost:8081/artifactory/Demo_2518</url>
     </snapshotRepository>
 </distributionManagement>
