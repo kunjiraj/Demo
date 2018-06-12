@@ -6,7 +6,7 @@ node {
 	
 	stage 'Install'
     echo "Starting clean compilation"
-    bat "mvn Clean Install"
+    bat "mvn clean Install"
 	
     stage 'Build'
     echo "Starting clean compilation"
