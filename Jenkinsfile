@@ -6,21 +6,21 @@ node {
 	
 	stage 'Install'
     echo "Starting clean compilation"
-    bat "mvn clean install"
+    sh "mvn clean install"
 	
     stage 'Build'
     echo "Starting clean compilation"
-    bat "mvn compile"
+    sh "mvn compile"
 
     stage 'Unit Test'
     echo "Running Test Cases"
-    bat "mvn test"
+    sh "mvn test"
 
     stage 'Packaging'
     echo "Packaging the Application"
-    bat "mvn package"
+    sh "mvn package"
 
     stage 'Publish'
     echo "Pushing it to Artifactory"
-    bat "mvn deploy"
+    sh "mvn deploy"
 }
