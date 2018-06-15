@@ -4,6 +4,9 @@
 <%@page import="java.util.*"%>
 <%@page import="java.net.*"%>
 
+<%@ page import = "java.io.*" %>
+<%@ page import = "javax.servlet.*,java.text.*" %>
+
 <!DOCTYPE html>
 
 <html>
@@ -20,6 +23,13 @@
 			{
 				color:#e32;
   			}
+  			.all
+    		{
+		    	font-size: 200%;
+		    	width:750px;
+		        height:350px;
+		        font-weight:bold;
+    		}
 		</style>
 		
     </head>
@@ -35,9 +45,13 @@
          				 System.out.println("Host name :"+host);
          				 
          				request.setAttribute("host",host);
+         				
          			 %>
-         			
-         				HOSTNAME<label> <em>*</em></label> <label><%=request.getAttribute("host")%></label>
+         			 	<br> <br> <br>
+         				<lable class="all"> DevOps Demo : <%= (new java.util.Date()).toLocaleString()%> </lable>
+         				
+         				<br> <br> <br> <br>
+         				<label class="all"> HostName <em>*</em> <%=request.getAttribute("host")%></label>
          			<%
          			 }
          			catch (Exception e)
@@ -54,4 +68,3 @@
     
        </body>
  </html>
- 
