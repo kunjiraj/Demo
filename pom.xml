@@ -49,16 +49,16 @@
 <distributionManagement>
     <repository>
         <id>central</id>
-        <name>localhost-releases</name>
 		<username>admin</username>
 		<password>admin</password>
-        <url>http://10.83.34.137:8002/artifactory/Demo</url>
+        <name>localhost-releases</name>
+		<url>http://10.83.34.137:8002/artifactory/Demo</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>localhost-snapshots</name>
 		<username>admin</username>
 		<password>admin</password>
+        <name>localhost-snapshots</name>
         <url>http://10.83.34.137:8002/artifactory/Demo</url>
     </snapshotRepository>
 </distributionManagement>
