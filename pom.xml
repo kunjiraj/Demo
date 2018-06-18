@@ -46,18 +46,27 @@
     </plugins>
   </build>
   
+<servers>
+		<server>
+            <id>central</id>
+            <username>admin</username>
+            <password>admin</password>
+        </server>
+		<server>
+            <id>snapshots</id>
+            <username>admin</username>
+            <password>admin</password>
+        </server>
+</servers>
+
 <distributionManagement>
     <repository>
         <id>central</id>
-		<username>admin</username>
-		<password>admin</password>
-        <name>localhost-releases</name>
+		<name>localhost-releases</name>
 		<url>http://10.83.34.137:8002/artifactory/Demo</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-		<username>admin</username>
-		<password>admin</password>
         <name>localhost-snapshots</name>
         <url>http://10.83.34.137:8002/artifactory/Demo</url>
     </snapshotRepository>
