@@ -47,6 +47,11 @@
   </build>
   
 <distributionManagement>
+<repository>
+        <id>central</id>
+        <name>node02.local.com-releases</name>
+        <url>http://WL310888:8002/artifactory/Demo</url>
+    </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>node02.local.com-snapshots</name>
