@@ -49,12 +49,12 @@
 <distributionManagement>
     <repository>
         <id>central</id>
-		<name>localhost-releases</name>
-		<url>http://WL310888:8002/artifactory/Demo</url>
+        <name>node02.local.com-releases</name>
+        <url>http://WL310888:8002/artifactory/Demo</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>localhost-snapshots</name>
+        <name>node02.local.com-snapshots</name>
         <url>http://WL310888:8002/artifactory/Demo</url>
     </snapshotRepository>
 </distributionManagement>
