@@ -7,15 +7,15 @@
   <name>ftp</name>
   <url>http://maven.apache.org</url>
   
-  <properties>
+<properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
 
 <dependencies>
     <dependency>
-    	<groupId>javax.servlet</groupId>
-    	<artifactId>javax.servlet-api</artifactId>
-    	<version>3.1.0</version>
+    	<groupId>com.example.host</groupId>
+    	<artifactId>hostapp</artifactId>
+    	<version>1.0</version>
 	</dependency>
 	
 	<dependency>
@@ -50,12 +50,12 @@
     <repository>
         <id>central</id>
         <name>localhost-releases</name>
-        <url>http://127.0.0.1:8002/artifactory/Demo</url>
+        <url>http://10.83.34.137:8002/artifactory/Demo</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>localhost-snapshots</name>
-        <url>http://127.0.0.1:8002/artifactory/Demo</url>
+        <url>http://10.83.34.137:8002/artifactory/Demo</url>
     </snapshotRepository>
 </distributionManagement>
 </project>
